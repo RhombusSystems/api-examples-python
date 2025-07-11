@@ -1,4 +1,4 @@
-###################################################################################
+##################################################################################
 # Copyright (c) 2021 Rhombus Systems                                              #
 #                                                                                 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy    #
@@ -89,6 +89,7 @@ def init_argument_parser():
     parser.add_argument(
         "--camera_uuid", "-cam", type=str, required=False, help="Camera UUID"
     )
+    parser.add_argument("--destination", "-d", type=str, required=False, help="The destination path to write the ouput file(s) to", default="./")
     return parser
 
 
@@ -166,6 +167,7 @@ class CopyFootageToLocalStorage:
         self.video = video_file_name
         self.audio = audio_file_name
         self.use_wan = args.usewan
+        self.destination = args.destination
 
         # Set start_time and duration from arguments, default is handled in argument definition
         self.start_time = args.start_time
@@ -258,8 +260,10 @@ class CopyFootageToLocalStorage:
         mpd_info = RhombusMPDInfo(str(mpd_doc_resp.content, "utf-8"), False)
         mpd_doc_resp.close()
 
-        # start writing the video stream
-        with open(self.video, "wb") as output_fp:
+        # start writing the video stream 
+        output_file_path = os.path.join(self.destination, self.video)
+        _logger.debug("Will write to: %s", output_file_path)
+        with open(output_file_path, "wb") as output_fp:
             # first write the init file
             init_seg_uri = get_segment_uri(mpd_uri, mpd_info.init_string)
             _logger.debug("Init segment uri: %s", init_seg_uri)
