@@ -9,7 +9,7 @@ This Repository is home to Python based examples for many of the endpoints of Rh
 common languages can be found [here.](https://github.com/RhombusSystems)
 
 To get started and explore the API's
-Documentation, [Click Here!](https://apidocs.rhombussystems.com/reference/introduction)
+Documentation, [Click Here!](https://developer.rhombus.com/)
 
 For answers to Frequently Asked
 Questions, [Click Here!](https://support.rhombussystems.com/hc/en-us/sections/115002570508-FAQ)
@@ -34,8 +34,8 @@ This example batch modifies labels based on CLAs
 
 #### API Endpoints
 
-- [face/addFaceLabel](https://apidocs.rhombussystems.com/reference/addfacelabel)
-- [face/removeFaceLabel](https://apidocs.rhombussystems.com/reference/removefacelabel)
+- [face/addFaceLabel](https://developer.rhombus.com/api-reference/face-recognition-person-webservice/add-a-label-to-a-person)
+- [face/removeFaceLabel](https://developer.rhombus.com/api-reference/face-recognition-person-webservice/remove-a-label-from-a-person)
 
 ## climate_create_seekpoint.py
 
@@ -43,10 +43,10 @@ This example gets the rate of change of the temperature.
 
 #### API Endpoints
 
-- [climate/getMinimalClimateStateList](https://apidocs.rhombussystems.com/reference/getminimalclimatestatelist)
-- [climate/getClimateEventsForSensor](https://apidocs.rhombussystems.com/reference/getclimateeventsforsensor)
-- [camera/getMinimalCameraStateList](https://apidocs.rhombussystems.com/reference/getminimalcamerastatelist)
-- [camera/createFootageSeekpoints](https://apidocs.rhombussystems.com/reference/createfootageseekpoints)
+- [climate/getMinimalClimateStateList](https://developer.rhombus.com/api-reference/climate-webservice/get-minimal-climate-state-list)
+- [climate/getClimateEventsForSensor](https://developer.rhombus.com/api-reference/climate-webservice/get-climate-events-for-environmental-sensor)
+- [camera/getMinimalCameraStateList](https://developer.rhombus.com/api-reference/camera-webservice/get-minimal-camera-state-list)
+- [camera/createFootageSeekpoints](https://developer.rhombus.com/api-reference/camera-webservice/create-custom-footage-seekpoints)
 
 ## copy_footage_to_local_storage.py
 
@@ -54,8 +54,8 @@ This example pulls footage from a camera on LAN and stores it to the filesystem.
 
 #### API Endpoints
 
-- [org/generateFederatedSessionToken](https://apidocs.rhombussystems.com/reference/generatefederatedsessiontoken)
-- [camera/getMediaUris](https://apidocs.rhombussystems.com/reference/getmediauris-1)
+- [org/generateFederatedSessionToken](https://developer.rhombus.com/api-reference/org-webservice/generate-federated-session-token)
+- [camera/getMediaUris](https://developer.rhombus.com/api-reference/camera-webservice/get-camera-media-uris)
 
 ## door_report.py
 
@@ -63,9 +63,9 @@ This example gets a report of the recent door openings and closings.
 
 #### API Endpoints
 
-- [location/getLocations](https://apidocs.rhombussystems.com/reference/getlocations)
-- [door/getMinimalDoorStateList](https://apidocs.rhombussystems.com/reference/getminimaldoorstatelist)
-- [door/getDoorEventsForSensor](https://apidocs.rhombussystems.com/reference/getdooreventsforsensor)
+- [location/getLocations](https://developer.rhombus.com/api-reference/location-webservice/get-locations)
+- [door/getMinimalDoorStateList](https://developer.rhombus.com/api-reference/door-webservice/get-basic-state-information-for-all-door-sensors)
+- [door/getDoorEventsForSensor](https://developer.rhombus.com/api-reference/door-webservice/get-list-of-door-openclose-events-for-door-sensor)
 
 ## face_report.py
 
@@ -73,8 +73,8 @@ This example gets a report of the recent faces and downloads the pictures of eac
 
 #### API Endpoints
 
-- [proximity/getMinimalProximityStateList](https://apidocs.rhombussystems.com/reference/getminimalproximitystatelist)
-- [face/getRecentFaceEventsV2](https://apidocs.rhombussystems.com/reference/getrecentfaceeventsv2)
+- [proximity/getMinimalProximityStateList](https://developer.rhombus.com/api-reference/proximity-webservice/get-minimal-proximity-state-list)
+- [face/getRecentFaceEventsV2](https://developer.rhombus.com/api-reference/face-recognition-event-webservice/find-face-events-by-organization)
 
 ## get_frame.py
 
@@ -82,7 +82,7 @@ This example pulls a frame from a camera on LAN and saves it.
 
 #### API Endpoints
 
-- [video/getExactFrameUri](https://apidocs.rhombussystems.com/reference/getexactframeuri)
+- [video/getExactFrameUri](https://developer.rhombus.com/api-reference/video-webservice/get-exact-frame-uri)
 
 ## licenseplate_report.py
 
@@ -90,8 +90,8 @@ This example gets a report of recent licenseplates and downloads the pictures of
 
 #### API Endpoints
 
-- [camera/getMinimalCameraStateList](https://apidocs.rhombussystems.com/reference/getminimalcamerastatelist)
-- [vehicle/getRecentVehicleEvents](https://apidocs.rhombussystems.com/reference/getrecentvehicleevents)
+- [camera/getMinimalCameraStateList](https://developer.rhombus.com/api-reference/camera-webservice/get-minimal-camera-state-list)
+- [vehicle/getRecentVehicleEvents](https://developer.rhombus.com/api-reference/vehicle-webservice/get-recent-vehicle-events)
 
 ## LiveStreamingExample
 
@@ -99,8 +99,8 @@ This example demonstrates how to re-stream Rhombus live camera footage to a web 
 
 #### API Endpoints
 
-- [camera/getMediaUris](https://apidocs.rhombussystems.com/reference/getcameramediauris)
-- [org/generateFederatedSessionToken](https://apidocs.rhombussystems.com/reference/generatefederatedsessiontoken)
+- [camera/getMediaUris](https://developer.rhombus.com/api-reference/camera-webservice/get-camera-media-uris)
+- [org/generateFederatedSessionToken](https://developer.rhombus.com/api-reference/org-webservice/generate-federated-session-token)
 
 ## tag_filter_stats.py
 
@@ -108,9 +108,9 @@ This example filters through tag movements and creates CSV file..
 
 #### API Endpoints
 
-- [proximity/getMinimalProximityStateList](https://apidocs.rhombussystems.com/reference/getminimalproximitystatelist)
-- [location/getLocations](https://apidocs.rhombussystems.com/reference/getlocations)
-- [proximity/getLocomotionEventsForTag](https://apidocs.rhombussystems.com/reference/getlocomotioneventsfortag)
+- [proximity/getMinimalProximityStateList](https://developer.rhombus.com/api-reference/proximity-webservice/get-minimal-proximity-state-list)
+- [location/getLocations](https://developer.rhombus.com/api-reference/location-webservice/get-locations)
+- [proximity/getLocomotionEventsForTag](https://developer.rhombus.com/api-reference/proximity-webservice/get-locomotion-events-for-tag)
 
 ## timelapse_saver.py
 
@@ -118,9 +118,9 @@ This example creates a timelapse and saves it in a file.
 
 #### API Endpoints
 
-- [camera/getMinimalCameraStateList](https://apidocs.rhombussystems.com/reference/getminimalcamerastatelist)
-- [video/getTimelapseClips](https://apidocs.rhombussystems.com/reference/gettimelapseclips)
-- [video/generateTimelapseClip](https://apidocs.rhombussystems.com/reference/generatetimelapseclip)
+- [camera/getMinimalCameraStateList](https://developer.rhombus.com/api-reference/camera-webservice/get-minimal-camera-state-list)
+- [video/getTimelapseClips](https://developer.rhombus.com/api-reference/video-webservice/get-timelapse-clips)
+- [video/generateTimelapseClip](https://developer.rhombus.com/api-reference/video-webservice/generate-timelapse-clip)
 
 ## user_list.py
 
@@ -128,7 +128,7 @@ This example gets a report of all of the Users and their emails.
 
 #### API Endpoints
 
-- [user/getUsersInOrg](https://apidocs.rhombussystems.com/reference/getusersinorg)
+- [user/getUsersInOrg](https://developer.rhombus.com/api-reference/user-webservice/get-users-in-organization)
 
 ## video_clip_report.py
 
@@ -136,10 +136,10 @@ This example creates and downloads a clip and accompanying report.
 
 #### API Endpoints
 
-- [camera/getMinimalCameraStateList](https://apidocs.rhombussystems.com/reference/getminimalcamerastatelist)
-- [video/spliceV2](https://apidocs.rhombussystems.com/reference/splicev2)
-- [event/getClipsWithProgress](https://apidocs.rhombussystems.com/reference/getclipswithprogress)
-- [event/getSavedClipDetails](https://apidocs.rhombussystems.com/reference/getsavedclipdetails)
+- [camera/getMinimalCameraStateList](https://developer.rhombus.com/api-reference/camera-webservice/get-minimal-camera-state-list)
+- [video/spliceV2](https://developer.rhombus.com/api-reference/video-webservice/splice-v2)
+- [event/getClipsWithProgress](https://developer.rhombus.com/api-reference/event-webservice/get-list-of-saved-clips-in-organization-with-current-progress)
+- [event/getSavedClipDetails](https://developer.rhombus.com/api-reference/event-webservice/get-detailed-information-about-a-saved-clip-including-seekpoints-and-bounding-boxes)
 
 ## webhook.py
 
@@ -148,5 +148,5 @@ webhook.
 
 #### API Endpoints
 
-- [org/generateFederatedSessionToken](https://apidocs.rhombussystems.com/reference/generatefederatedsessiontoken)
-- [integrations/updateWebhookIntegration](https://apidocs.rhombussystems.com/reference/updatewebhookintegration)
+- [org/generateFederatedSessionToken](https://developer.rhombus.com/api-reference/org-webservice/generate-federated-session-token)
+- [integrations/updateWebhookIntegration](https://developer.rhombus.com/api-reference/webhook-integrations-webservice/update-webhook-integration)

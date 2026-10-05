@@ -1,7 +1,7 @@
 # Rhombus Extended AI Module
 
 ## What is this
-Rhombus Extended AI Module is a Python commandline application that identifies objects in Rhombus Systems cameras using the OpenCV and YOLO with the COCO model. This is an example of how to use the [Rhombus API](https://apidocs.rhombussystems.com/reference). This is NOT a production ready example, it is for demonstrational purposes only
+Rhombus Extended AI Module is a Python commandline application that identifies objects in Rhombus Systems cameras using the OpenCV and YOLO with the COCO model. This is an example of how to use the [Rhombus API](https://developer.rhombus.com/). This is NOT a production ready example, it is for demonstrational purposes only
 
 The code demos how to send API requests to Rhombus using API token authentication and how to download VODs from Rhombus.
 
